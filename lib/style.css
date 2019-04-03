@@ -1,7 +1,5 @@
 /* Add your styles here */
 
-/* Universal Styles */
-
 /* Box Model */
 
 *,
@@ -12,11 +10,30 @@
   box-sizing: border-box;
 }
 
+/* Universal Styles */
+
 body {
   background-image: url('https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_foodlogo.png');
   text-align: center;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
+  overflow: hidden;
+}
+
+/* Video Embed */
+.video-container {
+  position: relative;
+  padding-bottom: 30.25%;
+  padding-top: 0px;
+  height: 0;
+  overflow: hidden;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: block;
+  top: 0;
+  left: 0;
 }
 
 a {
@@ -37,18 +54,23 @@ nav img {
 
 nav span {
   display: inline-block;
-  font-size: 16px;
+  font-size: 1.2rem;
   font-weight: 100;
   letter-spacing: 2px;
   margin: 10px 0;
+  padding: 10px;
+  font-weight: 500;
 }
 
 nav a {
   color: #666666;
+  height: auto;
+  width: 100%;
 }
 
 nav a:hover {
   color: #ff0404;
+  transition: ease 0.9s;
 }
 
 /* Content Container */
@@ -94,6 +116,34 @@ nav a:hover {
   line-height: 34px;
   width: 90%;
   margin-top: 18px;
+  margin: auto;
+}
+
+.body h2 {
+  color: #05a8aa;
+  font-weight: bold;
+  padding: 2em;
+}
+
+/* Menu Section*/
+
+section#menu {
+}
+
+section h2 {
+  color: #05a8aa;
+  font-weight: bold;
+  padding: 2em;
+}
+
+section span {
+  display: inline-block;
+}
+
+section span img {
+  width: 20em;
+  height: 20em;
+  margin: 10px;
 }
 
 /* Content Button */
@@ -142,4 +192,27 @@ ul.nutrition li {
   font-size: 26px;
   font-weight: 700;
   letter-spacing: 2px;
+}
+
+/*Media Queries*/
+
+@media only screen and (min-width: 200px) {
+  .video-container {
+    display: block;
+    height: auto;
+    width: 100%;
+    padding-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  section span {
+    display: inline-block;
+  }
+
+  section span img {
+    width: 10em;
+    height: auto;
+    margin: 10px;
+  }
 }
