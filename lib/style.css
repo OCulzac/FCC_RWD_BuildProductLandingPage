@@ -103,6 +103,16 @@ nav a:hover {
   margin: 0 auto;
 }
 
+hr {
+  width: 2em;
+  color: #666666;
+}
+
+hr:hover {
+  width: 5em;
+  transition: ease 0.9s;
+}
+
 /* Content Body */
 
 .content .body {
@@ -126,9 +136,6 @@ nav a:hover {
 }
 
 /* Menu Section*/
-
-section#menu {
-}
 
 section h2 {
   color: #05a8aa;
@@ -192,6 +199,39 @@ ul.nutrition li {
   font-size: 26px;
   font-weight: 700;
   letter-spacing: 2px;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #adbbbb9d;
+  padding-bottom: 20px;
+}
+
+form h2 {
+  color: #05a8aa;
+  font-weight: bold;
+  padding: 2em;
+}
+form input {
+  width: 20em;
+  height: 2em;
+  border-radius: 5px;
+}
+form input[type='submit'] {
+  border-radius: 4px;
+  background-color: #05a8aa;
+  border: 1px solid #05a8aa;
+  color: #fff;
+  display: block;
+  font-weight: 700;
+  width: 100px;
+  padding: 10px;
+  margin: 10px auto;
+  cursor: pointer;
 }
 
 /*Media Queries*/

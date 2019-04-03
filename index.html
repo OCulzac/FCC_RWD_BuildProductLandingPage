@@ -25,10 +25,9 @@ For now, the test suite only works in Chrome! Please read the README below in th
           />
         </a>
         <span><a class="nav-link" href="#menu">MENU</a></span>
-        <span><a class="nav-link" href="#order">ORDER</a></span>
         <span><a class="nav-link" href="#nutrition">NUTRITION</a></span>
-        <!--         <span><a class="nav-link" href="#">LOCATIONS</a></span>
- -->
+        <span><a class="nav-link" href="#order">ORDER</a></span>
+        <span><a class="nav-link" href="#contact">CONTACT US</a></span>
       </nav>
     </header>
     <!-- Content Section -->
@@ -39,10 +38,10 @@ For now, the test suite only works in Chrome! Please read the README below in th
       <header id="top" class="header">
         <h1>BBQ BACON BURGER</h1>
       </header>
-
+      <hr />
       <!-- Content Body -->
       <div id="body" class="body">
-        <h2>Making a burger at home - @Binging w/ Babish</h2>
+        <h2>How we make our burgers - @Babish</h2>
         <div class="video-container">
           <iframe
             id="video"
@@ -61,31 +60,9 @@ For now, the test suite only works in Chrome! Please read the README below in th
           red onion, perfectly crispy pork belly, and our hickory smoked BBQ
           sauce.
         </p>
-        <!-- Menu Section -->
-        <section id="menu">
-          <h2>Here are a few of our Items</h2>
-          <span class="category"
-            ><img
-              src="https://www.chicken.ca/assets/RecipePhotos/_resampled/FillWzUwMCw1MDBd/Big-Juicy-Burgers.jpg"
-              alt="BBQ Burger"
-          /></span>
-          <span class="category"
-            ><img
-              src="https://www.wegmans.com/content/dam/wegmans/recipes/2/21628.jpg"
-              alt="Buffalo Chicken Burger"
-          /></span>
-          <span class="category"
-            ><img
-              src="https://www.pamperedchef.ca/iceberg/com/recipe/939754-lg.jpg"
-              alt="Peppercorn Burger"
-          /></span>
-        </section>
-        <!-- Order Button -->
-
-        <a href="#" id="order" class="button">ORDER NOW</a>
 
         <!-- Nutrition Information -->
-
+        <hr />
         <ul id="nutrition" class="nutrition">
           <li>
             <span class="category">CALORIES</span>
@@ -109,8 +86,57 @@ For now, the test suite only works in Chrome! Please read the README below in th
           </li>
         </ul>
       </div>
-
+      <hr />
+      <!-- Menu Section -->
+      <section id="menu">
+        <h2>Here are a few options</h2>
+        <span class="category"
+          ><img
+            src="https://www.chicken.ca/assets/RecipePhotos/_resampled/FillWzUwMCw1MDBd/Big-Juicy-Burgers.jpg"
+            alt="BBQ Burger"
+        /></span>
+        <span class="category"
+          ><img
+            src="https://www.wegmans.com/content/dam/wegmans/recipes/2/21628.jpg"
+            alt="Buffalo Chicken Burger"
+        /></span>
+        <span class="category"
+          ><img
+            src="https://www.pamperedchef.ca/iceberg/com/recipe/939754-lg.jpg"
+            alt="Peppercorn Burger"
+        /></span>
+      </section>
+      <!-- Order Button -->
+      <hr />
+      <a href="#" id="order" class="button">ORDER NOW</a>
+      <hr />
       <!-- Form section -->
+      <form
+        id="form"
+        action="https://www.freecodecamp.com/email-submit"
+        method="POST"
+      >
+        <h2 id="contact">Tell us where we can improve!</h2>
+        <label for="name">Enter Your Name: </label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="What's your name?"
+          required
+        />
+        <br />
+        <label for="email">Enter Your email: </label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="What's your email?"
+          required
+        />
+        <br />
+        <input id="submit" type="submit" value="submit" />
+      </form>
     </div>
 
     <script src="lib/script.js"></script>
