@@ -24,7 +24,7 @@ For now, the test suite only works in Chrome! Please read the README below in th
             src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_burger-logo.svg"
           />
         </a>
-        <span><a class="nav-link" href="#menu">MENU</a></span>
+        <span><a class="nav-link" href="#howto">HOW-TO</a></span>
         <span><a class="nav-link" href="#nutrition">NUTRITION</a></span>
         <span><a class="nav-link" href="#order">ORDER</a></span>
         <span><a class="nav-link" href="#contact">CONTACT US</a></span>
@@ -41,7 +41,7 @@ For now, the test suite only works in Chrome! Please read the README below in th
       <hr />
       <!-- Content Body -->
       <div id="body" class="body">
-        <h2>How we make our burgers - @Babish</h2>
+        <h2 id="howto">How we make our burgers - @Babish</h2>
         <div class="video-container">
           <iframe
             id="video"
@@ -63,28 +63,31 @@ For now, the test suite only works in Chrome! Please read the README below in th
 
         <!-- Nutrition Information -->
         <hr />
-        <ul id="nutrition" class="nutrition">
-          <li>
-            <span class="category">CALORIES</span>
-            <span class="value">678</span>
-          </li>
-          <li>
-            <span class="category">FAT</span>
-            <span class="value">32</span>
-          </li>
-          <li>
-            <span class="category">PROTEIN</span>
-            <span class="value">8</span>
-          </li>
-          <li>
-            <span class="category">CARBOHYDRATES</span>
-            <span class="value">34</span>
-          </li>
-          <li>
-            <span class="category">SODIUM</span>
-            <span class="value">112</span>
-          </li>
-        </ul>
+        <div id="nutrition">
+          <h2>Quality controlled to provide optimum nutrition.</h2>
+          <ul class="nutrition">
+            <li>
+              <span class="category">CALORIES</span>
+              <span class="value">678</span>
+            </li>
+            <li>
+              <span class="category">FAT</span>
+              <span class="value">32</span>
+            </li>
+            <li>
+              <span class="category">PROTEIN</span>
+              <span class="value">8</span>
+            </li>
+            <li>
+              <span class="category">CARBOHYDRATES</span>
+              <span class="value">34</span>
+            </li>
+            <li>
+              <span class="category">SODIUM</span>
+              <span class="value">112</span>
+            </li>
+          </ul>
+        </div>
       </div>
       <hr />
       <!-- Menu Section -->
@@ -135,7 +138,7 @@ For now, the test suite only works in Chrome! Please read the README below in th
           required
         />
         <br />
-        <input id="submit" type="submit" value="submit" />
+        <input id="submit" type="submit" value="Submit" />
       </form>
     </div>
   </body>

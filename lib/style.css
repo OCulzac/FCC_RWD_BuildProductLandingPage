@@ -17,7 +17,7 @@ body {
   text-align: center;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
-  overflow: hidden;
+  margin-top: 9%;
 }
 
 /* Video Embed */
@@ -44,6 +44,12 @@ a {
 
 nav {
   text-align: center;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 10;
 }
 
 nav img {
@@ -77,9 +83,8 @@ nav a:hover {
 
 .content {
   width: 100%;
-  height: 500px;
+  height: auto;
   margin: 10px auto;
-  overflow: scroll;
 }
 
 /* Content Header */
@@ -95,7 +100,7 @@ nav a:hover {
   background-color: #05a8aa;
   color: #fff;
   font-family: 'Oswald', sans-serif;
-  font-size: 40px;
+  font-size: 2.2em;
   font-weight: 300;
   line-height: 40px;
   width: 68%;
@@ -118,6 +123,7 @@ hr:hover {
 .content .body {
   width: 90%;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .body p {
@@ -131,14 +137,45 @@ hr:hover {
 
 .body h2 {
   color: #05a8aa;
+  font-size: 1.5em;
   font-weight: bold;
   padding: 2em;
+}
+
+/* Content Nutrition */
+
+ul.nutrition {
+  padding: 20px;
+}
+
+ul.nutrition li {
+  display: inline-block;
+  background-color: #05a8aa;
+  list-style: none;
+  width: 200px;
+  padding: 10px 20px;
+  margin-bottom: 3px;
+}
+
+.nutrition .category {
+  color: white;
+  font-weight: 100;
+  letter-spacing: 2px;
+  display: block;
+}
+
+.nutrition .value {
+  color: white;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 2px;
 }
 
 /* Menu Section*/
 
 section h2 {
   color: #05a8aa;
+  font-size: 1.5em;
   font-weight: bold;
   padding: 2em;
 }
@@ -172,35 +209,6 @@ section span img {
   color: #fff;
 }
 
-/* Content Nutrition */
-
-ul.nutrition {
-  padding: 20px;
-}
-
-ul.nutrition li {
-  display: inline-block;
-  background-color: #05a8aa;
-  list-style: none;
-  width: 200px;
-  padding: 10px 20px;
-  margin-bottom: 3px;
-}
-
-.nutrition .category {
-  color: white;
-  font-weight: 100;
-  letter-spacing: 2px;
-  display: block;
-}
-
-.nutrition .value {
-  color: white;
-  font-size: 26px;
-  font-weight: 700;
-  letter-spacing: 2px;
-}
-
 /* Form */
 form {
   display: flex;
@@ -210,11 +218,14 @@ form {
   background-color: #adbbbb9d;
   padding-bottom: 20px;
 }
-
+form label {
+  padding: 1.2em;
+}
 form h2 {
   color: #05a8aa;
+  font-size: 1.5em;
   font-weight: bold;
-  padding: 2em;
+  padding: 1.2em;
 }
 form input {
   width: 20em;
@@ -222,14 +233,15 @@ form input {
   border-radius: 5px;
 }
 form input[type='submit'] {
+  display: block;
   border-radius: 4px;
   background-color: #05a8aa;
-  border: 1px solid #05a8aa;
+  border: none;
   color: #fff;
-  display: block;
   font-weight: 700;
   width: 100px;
-  padding: 10px;
+  height: auto;
+  padding: 12px 20px;
   margin: 10px auto;
   cursor: pointer;
 }
